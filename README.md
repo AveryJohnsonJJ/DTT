@@ -14,9 +14,9 @@ pip install -e .
 
 ## Datasets
 ### NTU-15 and Anomal action-18
-we do not provide these training datasets, but we provide the data processing process, please Check [datasets.md](/tools/data/README.md)
+we do not provide these training datasets, but we do provide the data processing process, please Check [datasets.md](/tools/data/README.md)
 ### Open environment-12
-The dataset is encrypted to prevent unauthorized access.Please send the application to (jiebaoxd@gmail.com) to request the download link.We provide raw video data and processed files in PKL format.
+The dataset is encrypted to prevent unauthorized access. Please send your application to (jiebaoxd@gmail.com) to request the download link. We provide both raw video data and processed files in PKL format.
 |knock over | grab other person's stuff | push|
 |---|---|---|
 |![image](https://github.com/AveryJohnsonJJ/DTT/assets/134851095/9f9039ab-f5f0-4605-961a-55bb88f676b5)|![image](https://github.com/AveryJohnsonJJ/DTT/assets/134851095/218e5a5d-af72-47a3-bf7d-f4885026af07)|![image](https://github.com/AveryJohnsonJJ/DTT/assets/134851095/22a2b984-ae7f-42b9-8545-caa280509a16)|
