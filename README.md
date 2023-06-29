@@ -45,3 +45,7 @@ bash tools/dist_test.sh {config_name} {checkpoint} {num_gpus} --out {output_file
 We present DTT, a new visual transformer that generates a hierarchical local-to-global feature extraction technique for human behaviors. 
 Our DTT retrieves the action-invariant characteristics tailored for open-scene actions successfully. On the three widely used benchmarks, NTU-15, Anomaly Action-18, and Open Environment-12, our DDT achieves state-of-the-art performance. 
 
+## Acknowledgement
+
+We have used codes from other great research work, including [MMAction2](https://github.com/open-mmlab/mmaction2) and [PYSKL](https://github.com/kennymckormick/pyskl.git).We sincerely thank these authors for their awesome work.
+
