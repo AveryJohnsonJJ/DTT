@@ -26,6 +26,11 @@ We provide links to the pre-processed skeleton annotations, you can directly dow
 |-------|----|------------------------|---------------------------------|---------------|---------------|-----------------------|--------------------------|--------------------|--------------------|----------------------------|----------------------------|---------------------------------------|-------------------------------------------|-----------------------|----------------------------------|
 | name  | falling | touch head (headache) | touch chest (stomachache/heart pain) | touch back (backache) | touch neck (neckache) | nausea or vomiting condition | punching/slapping other person | kicking other person | pushing other person | touch other person's pocket | hit other person with something | wield knife towards other person | knock over other person (hit with body) | grab other person's stuff | shoot at other person with a gun |
 
+For the processing of NTU-15, first you need to download the processed **NTU-RGB+D 120** 3D dataset from [PYSKL](https://github.com/kennymckormick/pyskl/tree/main/tools/data).Then use the following command to extract dangerous behaviors from the dataset.
+```
+python split_dangerourslist.py
+```
+
 ### Anomaly action-18
 **Anomaly action-18** is a dataset composed of **NTU-15** and other RGB datasets, such as **Kinetics**, **UCF101** and **HMDB51**. Compared with **NTU-15**, these RGB datasets mostly from YouTube have poorer video quality, but the number of videos and types of behaviors are richer. Similarly, we select videos that conform to the dangerous behaviors and add them to the dataset.
 
@@ -59,7 +64,12 @@ The table below shows the selected types of behaviors in the RGB dataset.
 | 314   | slapping        |
 | 396   | wrestling       |
 
-This is a behavior label obtained by merging the same type of behaviors.
+For the processing of Anomaly action-18, first you need download **Kinetics**, **UCF101** and **HMDB51** dataset from [MMaction2](https://github.com/open-mmlab/mmaction2/tree/main/tools/data).Then use scripts to extract data from videos of dangerous behaviors in the dataset. Finally, save the extracted dataset with **NTU-15**
+```shell
+bash tools/dist_run.sh tools/data/custom_2d_skeleton.py 1 --video-list tools/data/Anomaly_list.txt --out Anomaly18.pkl
+python outAnomaly18.py
+```
+
 #### Anomaly action-18
 | label | 0             | 1             | 2            | 3             | 4             | 5          | 6           | 7       | 8          | 9             | 10           | 11          | 12          | 13         | 14    | 15          | 16    | 17         |
 |-------|---------------|---------------|--------------|---------------|---------------|------------|-------------|---------|------------|---------------|-------------|-------------|-------------|------------|-------|-------------|-------|------------|
@@ -73,7 +83,7 @@ This is a behavior label obtained by merging the same type of behaviors.
 |-------|-----------------------------------------|------------------------|----------------------------------|---------------------------|---------------------------|-----------------------|--------------------------------|-------------------------|-------------------------|-----------------------------|------------------------------------|-------------------------------------------|
 | name  | falling                                 | touch head (headache)  | touch chest (stomachache/heart pain) | touch back (backache)    | touch neck (neckache)    | nausea or vomiting condition | punching/slapping other person | kicking other person     | pushing other person     | touch other person's pocket | hit other person with something    | knock over other person (hit with body) |
 
-We also provide the original video data, processing scripts, as well as the division method for dataset training and testing.
+We provide the original video data, processing scripts, as well as the division method for dataset training and testing.
 
 ```shell
 bash tools/dist_run.sh tools/data/custom_2d_skeleton.py 1 --video-list tools/data/video_list.txt --out ourvideo.pkl
