@@ -64,7 +64,9 @@ The table below shows the selected types of behaviors in the RGB dataset.
 | 314   | slapping        |
 | 396   | wrestling       |
 
-For the processing of Anomaly action-18, first you need download **Kinetics**, **UCF101** and **HMDB51** dataset from [MMaction2](https://github.com/open-mmlab/mmaction2/tree/main/tools/data).Then use scripts to extract data from videos of dangerous behaviors in the dataset. Finally, save the extracted dataset with **NTU-15**
+For the processing of Anomaly action-18, first you need download **Kinetics**, **UCF101** and **HMDB51** dataset from [MMaction2](https://github.com/open-mmlab/mmaction2/tree/main/tools/data).Then use scripts to extract data from videos of dangerous behaviors in the dataset. Finally, save the extracted dataset with **NTU-15**.
+
+
 scripts:comming soon
 
 #### Anomaly action-18
