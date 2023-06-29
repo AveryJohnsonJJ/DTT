@@ -12,16 +12,11 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-
 ## Datasets
-We provide processed data in pkl format [Download Dataset](https://drive.google.com/drive/folders/1KExekOP4OPZLkJykNRXV0pek0M6Jx_f7?usp=sharing).
-
-If you want to view specific information about the data format and processing methods, please Check [datasets.md](/tools/data/README.md).
-
-### Supported Dangerous Action Datasets
-- [x] NTU-15
-- [x] Anomal action-18
-- [x] Open environment-12
+### NTU-15 and Anomal action-18
+we do not provide these training datasets, but we provide the data processing process, please Check [datasets.md](/tools/data/README.md)
+### Open environment-12
+The dataset is encrypted to prevent unauthorized access.Please send the application to (jiebaoxd@gmail.com) to request the download link.We provide raw video data and processed files in PKL format.
 
 
 
@@ -47,5 +42,5 @@ Our DTT retrieves the action-invariant characteristics tailored for open-scene a
 
 ## Acknowledgement
 
-We have used codes from other great research work, including [MMAction2](https://github.com/open-mmlab/mmaction2) and [PYSKL](https://github.com/kennymckormick/pyskl.git).We sincerely thank these authors for their awesome work.
+We have used codes from other great research work, including [MMAction2](https://github.com/open-mmlab/mmaction2) , [PYSKL](https://github.com/kennymckormick/pyskl.git) and [Video-Swin-Transformer](https://github.com/SwinTransformer/Video-Swin-Transformer).We sincerely thank these authors for their awesome work.
 
